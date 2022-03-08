@@ -5,27 +5,27 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://MedMCQA.github.io/</loc>
+  <loc>https://hotpotqa.github.io/</loc>
   <lastmod>2019-01-20T19:01:04+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://MedMCQA.github.io/index.html</loc>
+  <loc>https://hotpotqa.github.io/index.html</loc>
   <lastmod>2019-01-20T19:01:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://MedMCQA.github.io/blog.html</loc>
+  <loc>https://hotpotqa.github.io/blog.html</loc>
   <lastmod>2019-01-20T19:01:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://MedMCQA.github.io/explorer.html</loc>
+  <loc>https://hotpotqa.github.io/explorer.html</loc>
   <lastmod>2019-01-20T19:01:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://MedMCQA.github.io/wiki-readme.html</loc>
+  <loc>https://hotpotqa.github.io/wiki-readme.html</loc>
   <lastmod>2019-01-20T19:01:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
