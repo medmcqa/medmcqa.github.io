@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    
+    
+</style>
+    span2 {
+  background-color: #f18973;
+}
+</style>
 
     <title>MedMCQA Homepage</title>
 
@@ -127,11 +134,11 @@
   
   <div class="card card-outline-secondary">
     <div class="card-header">
-      Leaderboard (w/o Context)
+      Leaderboard (with Context)
     </div>
     <div class="card-body">
-      In the <em>w/o Context</em> setting, For the experiments that do not use context, <br>
-      [CLS] Question [SEP] Option [SEP]
+      In the <em>with Context</em> setting, These contexts are combined by [SEP] token with the concatenation of question and answer pair. This creates four input sequences per question. <br>
+      [CLS] Context [SEP] Question [SEP] Option [SEP] <span>background color</span> <br>
       <table class="table table-responsive">
         <thead class="thead-light">
           <tr>
