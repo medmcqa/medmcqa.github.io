@@ -91,10 +91,10 @@
 <div class="col-lg-7">
   <div class="card card-outline-secondary">
     <div class="card-header">
-      Leaderboard (Distractor Setting)
+      Leaderboard (w/o Context)
     </div>
     <div class="card-body">
-      In the <em>distractor</em> setting, a question-answering system reads 10 paragraphs to provide an answer (Ans) to a question. They must also justify these answers with supporting facts (Sup).
+      In the <em>w/o Context</em> setting, Contexts are combined by [SEP] token with the concatenation of question and answer pair. This creates four input sequences per question.. [CLS] Context [SEP] Question [SEP] Option [SEP]
       <table class="table table-responsive">
         <thead class="thead-light">
           <tr>
@@ -105,27 +105,26 @@
             <th scope="col" colspan=1 class='text-center'>Dev</th>
           </tr>
           <tr>
-            <th scope="col" class='align-middle text-center'>EM</th>
-
-            <th scope="col" class='align-middle text-center'>EM</th>
+            <th scope="col" class='align-middle text-center'>Accuracy</th>
+            <th scope="col" class='align-middle text-center'>Accuracy</th>
           </tr>
         </thead>
         <tbody><tr>
             <td scope="row" class='align-middle text-center'>1<br>
               <span class="badge badge-secondary">Jan 28, 2022</span></td>
-            <td class='align-middle text-center'>FE2H on ALBERT (single model)<br/>
+            <td class='align-middle text-center'>Bert Base<br/>
               <span class="affiliation">Anonymous</span><br/></td>
             <td class='align-middle text-center'><div class="crossed"><i class="far fa-file text-danger"></i></div></td>
-            <td class='align-middle text-center'><strong>71.89</strong></td>
-            <td class='align-middle text-center'><strong>84.44</strong></td>
+            <td class='align-middle text-center'><strong>0.33</strong></td>
+            <td class='align-middle text-center'><strong>0.35</strong></td>
           </tr><tr>
             <td scope="row" class='align-middle text-center'>2<br>
               <span class="badge badge-secondary">May 28, 2021</span></td>
-            <td class='align-middle text-center'>SAE+ (single model)<br/>
+            <td class='align-middle text-center'>BioBert<br/>
               <span class="affiliation">JD AI Research</span><br/></td>
             <td class='align-middle text-center'><div class="crossed"><i class="far fa-file text-danger"></i></div></td>
-            <td class='align-middle text-center'>70.74</td>
-            <td class='align-middle text-center'>83.61</td>
+            <td class='align-middle text-center'>0.37</td>
+            <td class='align-middle text-center'>0.38</td>
           </tr></tbody>
       </table>
     </div>
