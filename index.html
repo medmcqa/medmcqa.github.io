@@ -91,22 +91,23 @@
 <div class="col-lg-7">
   <div class="card card-outline-secondary">
     <div class="card-header">
-      Leaderboard (Distractor Setting)
+      Leaderboard (with Context)
     </div>
     <div class="card-body">
-      In the <em>distractor</em> setting, a question-answering system reads 10 paragraphs to provide an answer (Ans) to a question. They must also justify these answers with supporting facts (Sup).
+      In the <em>w/o Context</em> setting, contexts are combined by [SEP] token with the concatenation of question and answer pair. This creates four input sequences per question. <br>
+      [CLS] Context [SEP] Question [SEP] Option [SEP]
       <table class="table table-responsive">
         <thead class="thead-light">
           <tr>
             <th scope="col" rowspan=2></th>
             <th scope="col" rowspan=2 class="align-middle text-center">Model</th>
             <th scope="col" rowspan=2 class="align-middle text-center">Code</th>
-            <th scope="col" colspan=2 class='align-middle text-center'>Ans</th>
-            <th scope="col" colspan=2 class='align-middle text-center'>Sup</th>
+            <th scope="col" colspan=2 class='align-middle text-center'>Test Set</th>
+            <th scope="col" colspan=2 class='align-middle text-center'>Dev Set</th>
           </tr>
           <tr>
-            <th scope="col" rowspan=2 class="align-middle text-center">EM</th>
-            <th scope="col" rowspan=2 class="align-middle text-center">EM</th>
+            <th scope="col" rowspan=2 class="align-middle text-center">Acc (%)</th>
+            <th scope="col" rowspan=2 class="align-middle text-center">Acc (%)</th>
           </tr>
         </thead>
         <tbody><tr>
@@ -132,27 +133,23 @@
   
   <div class="card card-outline-secondary">
     <div class="card-header">
-      Leaderboard (Fullwiki Setting)
+      Leaderboard (w/o Context)
     </div>
     <div class="card-body">
-      In the <em>fullwiki</em> setting, a question-answering system must find the answer to a question in the scope of the entire Wikipedia. Similar to in the distractor setting, systems are evaluated on the accuracy of their answers (Ans) and the quality of the supporting facts they use to justify them (Sup).
+      In the <em>w/o Context</em> setting, For the experiments that do not use context, <br>
+      [CLS] Question [SEP] Option [SEP]
       <table class="table table-responsive">
         <thead class="thead-light">
           <tr>
             <th scope="col" rowspan=2></th>
             <th scope="col" rowspan=2 class="align-middle text-center">Model</th>
             <th scope="col" rowspan=2 class="align-middle text-center">Code</th>
-            <th scope="col" colspan=2 class='text-center'>Ans</th>
-            <th scope="col" colspan=2 class='text-center'>Sup</th>
-            <th scope="col" colspan=2 class='text-center'>Joint</th>
+            <th scope="col" colspan=1 class='text-center'>Test Set</th>
+            <th scope="col" colspan=1 class='text-center'>Dev Set</th>
           </tr>
           <tr>
-            <th scope="col" class='text-center'>EM</th>
-            <th scope="col" class='text-center'>F<sub>1</sub></th>
-            <th scope="col" class='text-center'>EM</th>
-            <th scope="col" class='text-center'>F<sub>1</sub></th>
-            <th scope="col" class='text-center'>EM</th>
-            <th scope="col" class='text-center'>F<sub>1</sub></th>
+            <th scope="col" class='text-center'>Acc (%)</th>
+            <th scope="col" class='text-center'>Acc (%)</th>
           </tr>
         </thead>
         <tbody><tr>
@@ -163,10 +160,6 @@
             <td class='align-middle text-center'><a href="https://github.com/zycdev/AISO"><i class="far fa-file-alt"></i></a></td>
             <td class='align-middle text-center'><strong>67.46</strong></td>
             <td class='align-middle text-center'><strong>80.52</strong></td>
-            <td class='align-middle text-center'><strong>61.17</strong></td>
-            <td class='align-middle text-center'><strong>86.02</strong></td>
-            <td class='align-middle text-center'><strong>44.87</strong></td>
-            <td class='align-middle text-center'><strong>72.00</strong></td>
           </tr></tbody>
       </table>
     </div>
